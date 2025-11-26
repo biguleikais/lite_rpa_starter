@@ -6,15 +6,29 @@ A lightweight Robotic Process Automation (RPA) toolkit for automating repetitive
 
 RPA Lite helps developers automate business processes, data workflows, and repetitive tasks. Whether you're building automation scripts, workflow engines, or data processing pipelines, RPA Lite provides the essential tools to get the job done efficiently.
 
+This project is inspired by [Ui.Vision RPA](https://github.com/A9T9/RPA), a cross-platform browser automation tool with AI-powered RPA capabilities. While Ui.Vision focuses on browser-based automation with Selenium IDE compatibility, RPA Lite provides a streamlined Node.js toolkit for server-side automation workflows with built-in security features.
+
+### Key Differences from Ui.Vision RPA
+
+- **Server-Side Focus**: Designed for Node.js backend automation rather than browser extensions
+- **Secure by Default**: Built-in encryption for sensitive workflow data
+- **Lightweight**: Minimal dependencies, focused on core automation needs
+- **API-First**: Optimized for API automation, webhook processing, and data pipelines
+- **Free & Open Source**: Completely free for both private and commercial use
+
 ## Features
 
+- **RPA Automation**: Automate repetitive business processes and workflows
 - **Secure Data Handling**: Built-in encryption for sensitive workflow data
 - **Stream Processing**: Handle large data streams efficiently
 - **Batch Operations**: Process multiple tasks in parallel
 - **Pipeline Support**: Build complex multi-stage workflows
 - **Request/Response Handlers**: Automate API interactions
+- **Web Macro Support**: Process and automate web-based data workflows
 - **Flexible Architecture**: Modular design for easy integration
+- **Cross-Platform**: Works on macOS, Linux, and Windows
 - **Lightweight**: Minimal dependencies, maximum performance
+- **Free for Commercial Use**: No licensing fees for any use case
 
 ## Installation
 
@@ -340,19 +354,61 @@ async function secureInsert(data) {
 }
 ```
 
+## Platform Support
+
+RPA Lite runs on:
+- **macOS**: All recent versions
+- **Linux**: Ubuntu, Debian, CentOS, and other distributions
+- **Windows**: Windows 10 and later
+
+## Build from Source
+
+Requirements:
+- Node.js V20.11.1 or later
+- NPM V10.2.4 or later
+
+```bash
+# Install dependencies
+npm install
+
+# Run examples
+npm run example
+
+# Run your automation scripts
+node your-automation-script.js
+```
+
+## Related Projects
+
+- [Ui.Vision RPA](https://github.com/A9T9/RPA) - Browser-based RPA with AI capabilities
+  - Chrome, Edge, and Firefox extensions
+  - Visual macro recorder
+  - Selenium IDE import/export
+  - Active community forum and support
+
 ## Dependencies
 
-- `aes-js`: Encryption functionality
-- `pbkdf2`: Key derivation
+- `aes-js` (^3.1.2): Encryption functionality
+- `pbkdf2` (^3.1.2): Key derivation
 
 ## License
 
-MIT
+MIT - Free for private and commercial use
 
 ## Contributing
 
-We welcome contributions! Please open issues or submit pull requests.
+We welcome contributions! Please feel free to:
+- Open issues for bugs or feature requests
+- Submit pull requests
+- Improve documentation
+- Share your automation workflows
 
-## Support
+## Community & Support
 
-For questions and support, please open an issue on GitHub.
+- **GitHub Issues**: Report bugs and request features
+- **Discussions**: Share ideas and ask questions
+- **Documentation**: Check the examples folder for more use cases
+
+## Acknowledgments
+
+Inspired by the [Ui.Vision RPA](https://github.com/A9T9/RPA) project, which provides powerful browser automation capabilities. RPA Lite brings similar automation concepts to server-side Node.js environments with a focus on security and API workflows.
